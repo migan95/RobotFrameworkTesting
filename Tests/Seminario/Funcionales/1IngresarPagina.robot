@@ -1,6 +1,5 @@
 *** Settings ***
-Library     SeleniumLibrary
-Resource    ../../recursos.robot
+Resource    ../../../Resources/recursos.robot
 
 *** Test Cases***
 Navegacion Login Valido
@@ -9,3 +8,4 @@ Navegacion Login Valido
     Ingresar Password    admin
     Enviar Credenciales
     Verificar Dashboard
+    Close All Browsers

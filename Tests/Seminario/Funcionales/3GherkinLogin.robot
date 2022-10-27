@@ -3,7 +3,7 @@ Documentation     A test suite with a single Gherkin style test.
 ...
 ...               This test is functionally identical to the example in
 ...               valid_login.robot file.
-Resource          ../../recursos.robot
+Resource          ../../../Resources/recursos.robot
 Test Teardown     Close Browser
 
 *** Test Cases ***

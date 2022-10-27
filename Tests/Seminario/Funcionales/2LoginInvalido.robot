@@ -8,7 +8,7 @@ Suite Setup         Abrir Navegador Pagina Login
 Suite Teardown      Close Browser
 Test Setup          Navegar Pagina Login
 Test Template       Login Con Credenciales Incorrectas Debe Fallar
-Resource            ../../recursos.robot
+Resource            ../../../Resources/recursos.robot
 
 *** Test Cases ***          USUARIO             PASSWORD
 Usuario Invalido            invalido            ${PASSWORD_VALIDO}
