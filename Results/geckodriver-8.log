@@ -1,0 +1,10 @@
+1666829876168	geckodriver	INFO	Listening on 127.0.0.1:51849
+1666829876696	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51850" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/l3/qcx9mx212jx64cz9cw0kyxj80000gn/T/rust_mozprofileZva9KO"
+1666829878354	Marionette	INFO	Marionette enabled
+1666829878551	Marionette	INFO	Listening on port 51855
+Read port: 51855
+WebDriver BiDi listening on ws://127.0.0.1:51850
+1666829878722	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/l3/qcx9mx212jx64cz9cw0kyxj80000gn/T/rust_mozprofileZva9KO/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51850/devtools/browser/3f42cc6f-fd6d-4ee2-b85e-c548ef120244
+1666829881043	Marionette	INFO	Stopped listening on port 51855

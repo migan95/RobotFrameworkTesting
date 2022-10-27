@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.10.6 on darwin)" generated="20221026 18:59:32.596" rpa="false" schemaversion="3">
+<suite id="s1" name="GherkinLogin" source="/Users/mleon95/PycharmProjects/RobotTesting/Tests/Seminario/Funcionales/GherkinLogin.robot">
+<test id="s1-t1" name="Valid Login" line="10">
+<kw name="Given el navegador abre la pagina de login">
+<kw name="Abrir Navegador Pagina Login" library="recursos">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221026 18:59:32.712" level="INFO">Opening browser 'Firefox' to base url 'http://venta_tickets.test'.</msg>
+<msg timestamp="20221026 18:59:32.713" level="INFO">Firefox driver log is always forced to to: /Users/mleon95/PycharmProjects/RobotTesting/Results/geckodriver-15.log</msg>
+<status status="PASS" starttime="20221026 18:59:32.712" endtime="20221026 18:59:35.892"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221026 18:59:35.892" endtime="20221026 18:59:36.496"/>
+</kw>
+<kw name="Verificar Login Abierto" library="recursos">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Login - Sistema Tickets</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221026 18:59:36.500" level="INFO">Page title is 'Login - Sistema Tickets'.</msg>
+<status status="PASS" starttime="20221026 18:59:36.497" endtime="20221026 18:59:36.500"/>
+</kw>
+<status status="PASS" starttime="20221026 18:59:36.497" endtime="20221026 18:59:36.500"/>
+</kw>
+<status status="PASS" starttime="20221026 18:59:32.712" endtime="20221026 18:59:36.500"/>
+</kw>
+<status status="PASS" starttime="20221026 18:59:32.712" endtime="20221026 18:59:36.500"/>
+</kw>
+<kw name="When el usuario &quot;admin@test.com&quot; ingresa con la clave &quot;admin&quot;" sourcename="El usuario &quot;${username}&quot; ingresa con la clave &quot;${password}&quot;">
+<kw name="Ingresar Usuario" library="recursos">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221026 18:59:36.504" level="INFO">Typing text 'admin@test.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20221026 18:59:36.502" endtime="20221026 18:59:36.573"/>
+</kw>
+<status status="PASS" starttime="20221026 18:59:36.502" endtime="20221026 18:59:36.573"/>
+</kw>
+<kw name="Ingresar Password" library="recursos">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221026 18:59:36.574" level="INFO">Typing text 'admin' into text field 'password'.</msg>
+<status status="PASS" starttime="20221026 18:59:36.573" endtime="20221026 18:59:36.586"/>
+</kw>
+<status status="PASS" starttime="20221026 18:59:36.573" endtime="20221026 18:59:36.586"/>
+</kw>
+<kw name="Enviar Credenciales" library="recursos">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Iniciar Sesión</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221026 18:59:36.586" level="INFO">Clicking button 'Iniciar Sesión'.</msg>
+<status status="PASS" starttime="20221026 18:59:36.586" endtime="20221026 18:59:36.840"/>
+</kw>
+<status status="PASS" starttime="20221026 18:59:36.586" endtime="20221026 18:59:36.840"/>
+</kw>
+<status status="PASS" starttime="20221026 18:59:36.501" endtime="20221026 18:59:36.840"/>
+</kw>
+<kw name="Then verificar dashboard" library="recursos">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${DASHBOARD}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20221026 18:59:36.841" level="INFO">Current location is 'http://venta_tickets.test/'.</msg>
+<status status="PASS" starttime="20221026 18:59:36.840" endtime="20221026 18:59:36.841"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Eventos - Sistema Tickets</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221026 18:59:36.842" level="INFO">Page title is 'Eventos - Sistema Tickets'.</msg>
+<status status="PASS" starttime="20221026 18:59:36.841" endtime="20221026 18:59:36.842"/>
+</kw>
+<status status="PASS" starttime="20221026 18:59:36.840" endtime="20221026 18:59:36.842"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221026 18:59:36.842" endtime="20221026 18:59:37.337"/>
+</kw>
+<status status="PASS" starttime="20221026 18:59:32.711" endtime="20221026 18:59:37.337"/>
+</test>
+<doc>A test suite with a single Gherkin style test.
+
+This test is functionally identical to the example in
+valid_login.robot file.</doc>
+<status status="PASS" starttime="20221026 18:59:32.597" endtime="20221026 18:59:37.338"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="GherkinLogin">GherkinLogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

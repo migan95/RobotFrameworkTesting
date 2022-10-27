@@ -1,0 +1,13 @@
+1666830214993	geckodriver	INFO	Listening on 127.0.0.1:52001
+1666830215525	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52002" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/l3/qcx9mx212jx64cz9cw0kyxj80000gn/T/rust_mozprofilegboyeR"
+1666830217410	Marionette	INFO	Marionette enabled
+1666830217537	Marionette	INFO	Listening on port 52007
+Read port: 52007
+WebDriver BiDi listening on ws://127.0.0.1:52002
+1666830217724	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/l3/qcx9mx212jx64cz9cw0kyxj80000gn/T/rust_mozprofilegboyeR/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52002/devtools/browser/6645c674-c18c-4752-b8e1-1dfcc5df6080
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://venta_tickets.test."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://venta_tickets.test."
+1666830468820	Marionette	INFO	Stopped listening on port 52007
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
